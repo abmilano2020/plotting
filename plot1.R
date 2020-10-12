@@ -1,7 +1,7 @@
 ### load library 
 library(lubridate)
 ### load data
-dati = read.csv("plots\\household_power_consumption.txt", header = TRUE,
+dati = read.csv("household_power_consumption.txt", header = TRUE,
                 sep = ";", dec = ".")[-c(1:66636,69517:2075259),]
 ### modify data
 dati$Date = dmy(dati$Date)
@@ -21,4 +21,4 @@ hist(dati$Global_active_power,
      ylab = "Frequency")
 axis(2, at = seq(0,1200,200), labels= seq(0,1200,200))
 ### save png
-dev.off()
+dev.off()  
