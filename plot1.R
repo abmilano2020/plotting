@@ -6,11 +6,6 @@ dati = read.csv("household_power_consumption.txt", header = TRUE,
 ### modify data
 dati$Date = dmy(dati$Date)
 dati$Global_active_power = as.numeric(dati$Global_active_power)
-dati$Global_reactive_power = as.numeric(dati$Global_reactive_power)
-dati$Voltage = as.numeric(dati$Voltage)
-dati$Sub_metering_1 = as.numeric(dati$Sub_metering_1)
-dati$Sub_metering_2 = as.numeric(dati$Sub_metering_2)
-dati$Sub_metering_3 = as.numeric(dati$Sub_metering_3)
 ### create png 
 png("plot1.png", width = 480, height = 480)
 ### PNG 1
