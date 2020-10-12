@@ -8,7 +8,7 @@ dati$Date = dmy(dati$Date)
 dati$Global_active_power = as.numeric(dati$Global_active_power)
 ### create png 
 png("plot1.png", width = 480, height = 480)
-### PNG 1
+### create plot
 par("mar" = c(4,4,2,1), cex.lab = 0.8, cex.main = 0.9)
 hist(dati$Global_active_power,
      col = "red", main = "Global Active Power",
